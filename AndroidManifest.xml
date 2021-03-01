@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nenecorp.majiapp">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Interface.MajiUi.ReportIncident" />
+        <activity android:name=".Interface.MajiUi.OtherServices" />
+        <activity android:name=".Interface.MajiUi.WaterUsage" />
+        <activity android:name=".Interface.MajiUi.BillStatement" />
+        <activity android:name=".Interface.MajiUi.ExhausterServices" />
+        <activity android:name=".Interface.MajiUi.BowserServices" />
+        <activity android:name=".Interface.MajiUi.BuyWaterTokens" />
+        <activity android:name=".Interface.MajiUi.JisomeeMeter" />
+        <activity android:name=".Interface.MajiUi.LipaMaji" />
+        <activity android:name=".Interface.MajiUi.Home" />
+        <activity android:name=".Interface.AccountWizard.AccountMissing" />
+        <activity android:name=".Interface.AccountWizard.AccountWizard" />
+        <activity android:name=".Interface.AppStart.ResetPin" />
+        <activity android:name=".Interface.AppStart.SignIn" />
+        <activity android:name=".Interface.AppStart.Register" />
+        <activity android:name=".Interface.AppStart.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
